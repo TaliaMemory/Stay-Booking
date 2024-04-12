@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="preconnect" href="http://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:wght@700;800;900&display=swap">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <title>Luxury Stays</title>
+</head>
+<body>
+<header class="hero">
+  <nav>
+    <h2 class="logo">LUXURY <span>STAYS</span></h2>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="rooms.html">Rooms</a></li>
+      <li><a href="#sticky-footer">Contact</a></li>
+    </ul>
+    <button type="button" class="action_btn">Subscribe</button>
+
+    <div class="dropdown_menu">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="rooms.html">Rooms</a></li>
+        <li><a href="#sticky-footer">Contact</a></li>
+        <li><a href="#" class="action_btn">Subscribe</a></li>
+      </ul>
+    </div>
+
+    <div class="toggle_btn">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+  </nav>
+  
+
+
+</header>
+
+<div class="content">
+  <h1 class="top">LUXURY STAYS</h1>
+  <h3>Welcome to your home away from home where we assure your great pleasure and quality time</h3>
+  <a href="rooms.html"><button type="button" class="hero-btn">Book Room</button></a>
+</div>
+
+<!----About section start---->
+<section id="about">
+  <div class="main">
+    <img src="bkp2.jpg" alt="">
+    <div class="about-text">
+      <h2 class="h2">About Us:</h2>
+      <p></p>
+      <h5>Hotel Resort Leasure & Spar</h5>
+      <p>We are your home away form home. Here we offer a vast of refreshing and relaxing services for you to refresh from any pressure</p>
+      <a href="rooms.html"><button type="button">Book A Room</button></a>
+    </div>
+  </div>
+</section>
+
+
+
+<!contact us section>
+<footer id="sticky-footer">
+    <h2 class="contact">CONTACT US</h2><br>
+    <section class="offices">
+      <div class="details">
+        <h2>Reservations Office</h2><br>
+        <p>&#128222; Tell: 717-121-3263</p><br>
+        <p>&#9993; Email: luxurystays@gmail.com</p>
+      </div>
+      <div class="details">
+        <h2>Office Hours</h2><br>
+        <p>Monday to Friday</p>
+        <p>8:00 am to 6:00 pm</p><br>
+        <p>Saturday</p>
+        <p>9:00 am to 12:00 noon</p>
+      </div>
+    </section>
+</footer>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+      // Get the toggle button element
+      var toggleBtn = document.querySelector('.toggle_btn');
+
+      // Get the dropdown menu element
+      var dropdownMenu = document.querySelector('.dropdown_menu');
+
+      // Add event listener to toggle the dropdown menu
+      toggleBtn.addEventListener('click', function() {
+          dropdownMenu.classList.toggle('show');
+      });
+  });
+</script>
+  </body>
+</html>
